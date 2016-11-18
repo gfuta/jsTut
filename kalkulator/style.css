@@ -1,0 +1,13 @@
+table, tr, td {
+	width: 200px;
+	border: 1px solid gray;
+	background-color: white;
+	color: #00013B;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+}
+#ekran {
+	height: 40px;
+	text-align: right;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Kalkulator</title>
+	<script>
+	function kliknij1() {
+		document.getElementById("ekran").innerHTML = 1;
+	}
+	</script>
+</head>
+
+<body>
+
+	<table>
+		<tr>
+			<td id="ekran" colspan="4"> </td>
+		</tr>
+		<tr>
+			<td onclick="kliknij1();">1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td rowspan="2">+</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+		</tr>
+		<tr>
+			<td>,</td>
+			<td>0</td>
+			<td colspan="2">=</td>
+		</tr>
+</table>
+
+</body>
+</html>
+
