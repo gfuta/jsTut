@@ -4,11 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Kalkulator</title>
-	<script>
-	function kliknij1() {
-		document.getElementById("ekran").innerHTML = 1;
-	}
-	</script>
+	
 </head>
 
 <body>
@@ -18,29 +14,29 @@
 			<td id="ekran" colspan="4"> </td>
 		</tr>
 		<tr>
-			<td onclick="kliknij1();">1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>-</td>
+			<td onclick="kliknijNumer(1)">1</td>
+			<td onclick="kliknijNumer(2)">2</td>
+			<td onclick="kliknijNumer(3)">3</td>
+			<td onclick="kliknijOperator('-')">-</td>
 		</tr>
 		<tr>
-			<td>4</td>
-			<td>5</td>
-			<td>6</td>
-			<td rowspan="2">+</td>
+			<td onclick="kliknijNumer(4)">4</td>
+			<td onclick="kliknijNumer(5)">5</td>
+			<td onclick="kliknijNumer(6)">6</td>
+			<td rowspan="2" onclick="kliknijOperator('+')">+</td>
 		</tr>
 		<tr>
-			<td>7</td>
-			<td>8</td>
-			<td>9</td>
+			<td onclick="kliknijNumer(7)">7</td>
+			<td onclick="kliknijNumer(8)">8</td>
+			<td onclick="kliknijNumer(9)">9</td>
 		</tr>
 		<tr>
-			<td>,</td>
-			<td>0</td>
-			<td colspan="2">=</td>
+			<td onclick="kliknij('.')">.</td>
+			<td onclick="kliknijNumer(0)">0</td>
+			<td colspan="2" onclick="result">=</td>
 		</tr>
 </table>
-
+<script src="js/kalkulator.js"></script>
 </body>
 </html>
 
